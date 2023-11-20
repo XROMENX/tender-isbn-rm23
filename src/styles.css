@@ -1,0 +1,133 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono&display=swap');
+
+/* Applying Cascadia Mono font to specific elements */
+body {
+  font-family: "Cascadia Mono", monospace;
+}
+
+.App {
+  font-family: Cascadia Mono;
+  text-align: center;
+}
+/* styles.css */
+
+.components {
+  font-family: Cascadia Mono;
+  text-align: center;
+}
+/* Example styles for button */
+button {
+  font-family: "Cascadia Mono", monospace;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: #19253b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Example styles for the generated code box */
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Cascadia Mono", monospace;
+  /* font-family: 'Courier New', monospace; */
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+}
+*/
+
+
+
+
+
+/* Resetting default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling the retro-container */
+.retro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff; /* White background */
+}
+
+/* Styling the retro-border */
+.retro-border {
+  border: 10px solid #000; /* Black border */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Styling the notebook */
+.notebook {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff; /* White notebook background */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling the screen */
+.screen {
+  padding: 20px;
+  box-sizing: border-box;
+  color: #000; /* Black text */
+  font-family: "Press Start 2P", cursive; /* Example of a retro-style font */
+  text-align: center;
+}
+
+/* Styling the retro button */
+.retro-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000; /* Black button */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Styling the code block */
+.code-block {
+  text-align: center;
+}
+
+.code-block h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.code-block h3 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.code-block p {
+  font-size: 16px;
+  font-family: "Courier New", monospace;
+  background-color: #000; /* Black code block */
+  color: #fff; /* White code text */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Styling for mobile responsiveness */
+@media (max-width: 768px) {
+  .retro-border {
+    padding: 10px;
+  }
+}
