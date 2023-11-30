@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css"; // Import the CSS file for styling
 import { generateCode } from "./components";
-import { roundGeneratorcode } from "./roundGenerator.js";
+import "./roundGenerator";
 
 function App() {
   const [generatedCode, setGeneratedCode] = useState("");
