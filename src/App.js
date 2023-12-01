@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css"; // Import the CSS file for styling
 import { generateCode } from "./components";
-import "./roundGenerator";
+import {roundGeneratorcode} from "./roundGenerator";
 
 function App() {
   const [generatedCode, setGeneratedCode] = useState("");
-  const [roundGeneratorcode, setRoundGeneratedCode] = useState("");
+  const [roundGeneratedcode, setRoundGeneratedCode] = useState("");
 
   // Generate code on initial component mount
   useEffect(() => {
-    const code = "  ";
+    const code = "   ";
     setGeneratedCode(code);
   }, []);
   useEffect(() => {
-    const roundedCode = roundGeneratorcode();
+    const roundedCode = "    "// roundGeneratorcode();
     setRoundGeneratedCode(roundedCode);
   }, []);
 
@@ -34,20 +34,19 @@ function App() {
         <div className="notebook">
           <div className="screen">
             <h1>ISBN-10 Code Generator</h1>
-
-            <button onClick={handleGenerateClick} className="retro-button">
+            <div className="code-block">
+              {/* <h2>Generated Code:</h2> */}
+              <button onClick={handleGenerateClick} className="retro-button">
               Generate Code
             </button>
-            <button onClick={handleGenerateRoundClick} className="retro-button">
+            
+              <p>{generatedCode}</p>
+              {/* <h3>Generated round Code:</h3> */}
+              <br></br>
+              <button onClick={handleGenerateRoundClick} className="retro-button">
               Generate round code
             </button>
-
-            <div className="code-block">
-              <h2>Generated Code:</h2>
-              <p>{generatedCode}</p>
-
-              <h3>Generated Code:</h3>
-              <p>{roundGeneratorcode}</p>
+              <p>{roundGeneratedcode}</p>
             </div>
           </div>
         </div>
